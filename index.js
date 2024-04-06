@@ -18,7 +18,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({extended : true}))
 
-const port = process.env.PORT || 3000; // Use port 3000 as default if PORT is not specified in .env
+const port = process.env.PORT || 3000; 
 
 
 connectDB();
