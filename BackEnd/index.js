@@ -23,7 +23,7 @@ const port = process.env.PORT || 3000;
 
 connectDB();
 
-app.use('api/reservation',reservationRouter);
+app.use('/api/reservation',reservationRouter);
 app.use(errorMiddleware);
 
 app.listen(port, () => {
